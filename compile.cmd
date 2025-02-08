@@ -1,1 +1,2 @@
-..\compiler\csc /target:library /optimize+ /out:MediaInfoWrapper.dll .\MediaInfoWrapper\MediaInfoLib\*.cs .\MediaInfoWrapper\MediaInfoWrapper\*.cs .\MediaInfoWrapper\Properties\AssemblyInfo.cs
+..\compiler\csc /target:library /optimize+ /out:MediaInfoWrapper_x86.dll .\MediaInfoWrapper\MediaInfoLib\*.cs.x86 .\MediaInfoWrapper\MediaInfoWrapper\*.cs .\MediaInfoWrapper\Properties\AssemblyInfo.cs
+..\compiler\csc /target:library /optimize+ /out:MediaInfoWrapper_x64.dll .\MediaInfoWrapper\MediaInfoLib\*.cs.x64 .\MediaInfoWrapper\MediaInfoWrapper\*.cs .\MediaInfoWrapper\Properties\AssemblyInfo.cs

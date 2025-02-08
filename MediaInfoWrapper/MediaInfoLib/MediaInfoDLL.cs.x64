@@ -53,6 +53,7 @@ namespace MediaInfoLib
         TypeOfValue
     }
 
+    [Flags]
     public enum InfoFileOptions
     {
         FileOption_Nothing      = 0x00,
@@ -61,6 +62,7 @@ namespace MediaInfoLib
         FileOption_Max          = 0x04
     };
 
+    [Flags]
     public enum Status
     {
         None        =       0x00,
@@ -247,7 +249,7 @@ namespace MediaInfoLib
 
     public class MediaInfoList
     {
-        //Import of DLL functions. DO NOT USE until you know what you do (MediaInfo DLL do NOT use CoTaskMemAlloc to allocate memory)  
+        //Import of DLL functions. DO NOT USE until you know what you do (MediaInfo DLL do NOT use CoTaskMemAlloc to allocate memory)
         [DllImport("MediaInfo_x64.dll")]
         private static extern IntPtr MediaInfoList_New();
         [DllImport("MediaInfo_x64.dll")]
